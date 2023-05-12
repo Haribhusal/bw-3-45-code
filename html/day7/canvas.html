@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      canvas {
+        background-color: yellow;
+        height: 300px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="mydrawing"></canvas>
+
+    <script>
+      let drawingArea = document.getElementById("mydrawing");
+      let drawingContext = drawingArea.getContext("2d");
+      drawingContext.moveTo(100, 100);
+      drawingContext.lineTo(200, 200);
+      drawingContext.stroke();
+    </script>
+  </body>
+</html>

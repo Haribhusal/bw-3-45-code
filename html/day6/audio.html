@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <audio controls src="./myaudio.mp3"></audio> -->
+
+    <audio controls id="mysound" hidden>
+      <source src="./myaudio.mp3" />
+    </audio>
+
+    <!-- <button id="mybutton">Play My Sound</button> -->
+    <button id="mypausebutton">Play/pause</button>
+
+    <script>
+      let sound = document.getElementById("mysound");
+      console.dir(sound);
+      //   let btn = document.getElementById("mybutton");
+      let pauseBtn = document.getElementById("mypausebutton");
+
+      pauseBtn.addEventListener("mouseenter", function () {
+        sound.play();
+      });
+
+      pauseBtn.addEventListener("mouseleave", function () {
+        sound.pause();
+      });
+    </script>
+  </body>
+</html>

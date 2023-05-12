@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      ul li::before {
+        content: "";
+        height: 100px;
+        display: block;
+        width: 100px;
+        background-color: red;
+      }
+
+      input:hover {
+        /* Pseudo Class selectors */
+        /* Applies styles only on states */
+      }
+      ul li::after {
+        content: "";
+        height: 100px;
+        display: block;
+        width: 100px;
+        background-color: red;
+      }
+
+      ul li p::first-letter {
+        /* Pseudo Element Selector */
+        font-size: 60px;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">Link</a>
+    <ul>
+      <li>
+        <p>1 lorem 1</p>
+      </li>
+      <li>
+        <p>2 Lorem ipsum dolor sit.</p>
+      </li>
+      <li>
+        <p>3</p>
+      </li>
+      <li>
+        <p>4</p>
+      </li>
+      <li>
+        <p>5</p>
+      </li>
+    </ul>
+  </body>
+</html>

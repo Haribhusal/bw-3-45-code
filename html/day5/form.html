@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name" required />
+      </div>
+
+      <hr />
+
+      <div>
+        <label>Email</label>
+        <input
+          type="email"
+          value="bhusalhari89@gmail.com"
+          placeholder="Enter your Email"
+          readonly
+        />
+      </div>
+
+      <hr />
+
+      <div>
+        <label>Password</label>
+        <input type="password" placeholder="Enter your Password" required />
+      </div>
+      <hr />
+
+      <div>
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Confirm Password" />
+      </div>
+      <hr />
+
+      <div>
+        <input id="male" type="radio" name="genderSelector" />
+        <label for="male">I am male</label>
+      </div>
+
+      <div>
+        <input id="female" type="radio" name="genderSelector" />
+        <label for="female">I am Female</label>
+      </div>
+
+      <hr />
+
+      <div>
+        <input id="cric" type="checkbox" name="gameSelector" />
+        <label for="cric">Cricket</label>
+      </div>
+      <div>
+        <input id="foot" type="checkbox" name="gameSelector" />
+        <label for="foot">Football</label>
+      </div>
+      <div>
+        <input id="basket" type="checkbox" name="gameSelector" />
+        <label for="basket">Basketball</label>
+      </div>
+
+      <hr />
+
+      <div>
+        <input id="selectFile" type="file" accept="image/*" />
+        <label for="selectFile">Please upload any file</label>
+      </div>
+      <hr />
+
+      <div>
+        <input id="assa" type="datetime-local" />
+        <label for="assa">Please upload any file</label>
+      </div>
+      <hr />
+
+      <div>
+        <input id="age" type="number" />
+        <label for="age">Please Enter Your Age</label>
+      </div>
+      <hr />
+
+      <input type="submit" value="Submit Form" />
+    </form>
+  </body>
+</html>
